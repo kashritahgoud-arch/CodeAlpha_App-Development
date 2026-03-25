@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flashcard Quiz App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    .flashcard {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 300px;
+      margin: 20px auto;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .question {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .answer {
+      font-size: 16px;
+      color: #333;
+      display: none;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background: #007BFF;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    .controls {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Flashcard Quiz App</h2>
+  <div class="flashcard">
+    <div class="question" id="question"></div>
+    <div class="answer" id="answer"></div>
+    <button onclick="toggleAnswer()">Show Answer</button>
+    <div class="controls">
+      <button onclick="prevCard()">Previous</button>
+      <button onclick="nextCard()">Next</button>
